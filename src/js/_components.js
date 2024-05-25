@@ -1,9 +1,0 @@
-import "./components/calendar";
-import "./components/dropdawn";
-import "./components/hero-slider";
-import "./components/hero-slider-mobile";
-import "./components/premiere-slider";
-import "./components/select";
-import "./components/svgRotate";
-import "./components/video";
-import "./components/way-slider";
