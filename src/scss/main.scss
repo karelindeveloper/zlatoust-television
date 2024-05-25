@@ -1,0 +1,25 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/btn";
+@import "./components/subtitle";
+@import "./components/nav";
+@import "./components/social";
+@import "./components/select";
+@import "./components/video";
+@import "./components/calendar";
+@import "./components/form";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/new";
+@import "./components/news-section";
+@import "./components/banner";
+@import "./components/way";
+@import "./components/premiere";
+@import "./components/footer";
+@import "./components/news";
+@import "./components/single-news";

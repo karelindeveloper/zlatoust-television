@@ -1,0 +1,24 @@
+section.premiere
+  .container
+    .premiere__inner
+      h2.premiere__title.section__title Премьерные #[br] выпуски
+      .premiere__content.grid
+        .premiere__video.video
+          video.video__block(src="https://cdn.xpage.ru/local/templates/xpage2023/layout/dist/video/career/video-block/xpage20.mp4?171160355032775266", width="726", height="408")
+          button.video__btn.btn-reset: img.video__btn-image(src="img/svg/play-video.svg", alt="Play", width="100", height="100")
+        button.premiere__control.btn-reset#premiereBack(type="button"): svg.premiere__control-image(xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", width="11" height="18" viewBox="0 0 11 18"): use(xlink:href="img/svg/back-preview.svg#backPreview")
+        .premiere__time#premiereSlides.flex
+          a.premiere__block.flex(href="single-news.html")
+            time.subtitle.premiere__data(datetime="02-01-2021") 02&frasl;01&frasl;2021
+            h3.premiere__caption «Территория закона» 26.01.2021
+            img.new__button-image.premiere__link(src="img/svg/arrow-white.svg", alt="Стрелочка")
+          a.premiere__block.flex(href="single-news.html")
+            time.subtitle.premiere__data(datetime="02-01-2021") 02&frasl;01&frasl;2021
+            h3.premiere__caption «Сделано в Златоусте» №1 (Никон)
+          a.premiere__block.flex(href="single-news.html")
+            time.subtitle.premiere__data(datetime="02-01-2021") 02&frasl;01&frasl;2021
+            h3.premiere__caption «Депутатский час» 22.01.2021
+        button.premiere__control.btn-reset#premiereForward(type="button"): svg.premiere__control-image(xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", width="11" height="18" viewBox="0 0 11 18"): use(xlink:href="img/svg/back-preview.svg#backPreview")
+      a.btn.premiere__btn(href="news.html") Все выпуски
+
+

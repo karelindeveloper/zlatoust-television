@@ -1,0 +1,137 @@
+.nav {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.35;
+
+  @include small-tablet {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 80%;
+    height: 100vh;
+    background-color: var(--light-color);
+    padding-top: 60px;
+    padding-left: 30px;
+    transform: translateX(-150%);
+    transition: transform 0.3s ease-in-out;
+
+    .nav__contacts {
+      position: fixed;
+      width: 80%;
+      bottom: 0;
+      left: 0;
+      padding: 10px;
+      border-top: 2px solid var(--dark-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+
+      & .header__number {
+        margin: 0;
+      }
+    }
+  }
+
+  &__contacts {
+    display: none;
+  }
+
+  &.menu--active {
+    transform: none;
+  }
+
+  &-list {
+    gap: 28px;
+
+    @include tablet {
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    @include small-tablet {
+      flex-direction: column;
+    }
+  }
+
+  .dropdown {
+    position: relative;
+    & > a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.4s ease-in-out;
+
+      & > svg {
+        transition: stroke 0.4s ease-in-out, transform 0.4s ease-in-out;
+        stroke: var(--dark-color);
+      }
+
+      @include hover {
+        svg {
+          stroke: var(--accent-color);
+        }
+      }
+    }
+
+    &.is-open {
+      .nav-sublist {
+        display: block;
+      }
+
+      .nav__link-image {
+        transform: rotate(-180deg);
+      }
+    }
+
+    .nav-sublist {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: -10px;
+      background-color: var(--background-color);
+      border: 1px solid var(--dark-color);
+      padding: 0 10px 10px;
+      font-weight: normal;
+      z-index: 100;
+
+      @include small-tablet {
+        background-color: var(--light-color);
+      }
+
+      @include mobile {
+        left: -10px;
+      }
+
+      .nav__item {
+        margin-top: 10px;
+      }
+    }
+
+    @include hover {
+      .nav-sublist {
+        display: block;
+      }
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    display: inline-block;
+    transition: color 0.4s ease-in-out, transform 0.4s ease-in-out;
+    cursor: pointer;
+    position: relative;
+
+    @include hover {
+      color: var(--accent-color);
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+}

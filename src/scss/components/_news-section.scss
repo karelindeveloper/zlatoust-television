@@ -1,0 +1,43 @@
+.news-section {
+  &__inner {
+    padding-top: 82px;
+    padding-bottom: 90px;
+
+    @include mobile {
+      padding-top: 20px;
+      padding-bottom: 52px;
+    }
+  }
+
+  &__top {
+    justify-content: space-between;
+    margin-bottom: 54px;
+    align-items: end;
+  }
+
+  &__bottom {
+    row-gap: 80px;
+
+    @include mobile {
+      row-gap: 30px;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 21px;
+
+    @include mobile {
+      display: none;
+    }
+
+    &-mobile {
+      display: none;
+
+      @include mobile {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-top: 38px;
+      }
+    }
+  }
+}

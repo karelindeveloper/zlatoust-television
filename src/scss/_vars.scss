@@ -1,0 +1,17 @@
+:root {
+  // base
+  --font-family: "Frank", sans-serif;
+  --second-family: "Barlow", sans-serif;
+  --content-width: 1503px;
+  --container-offset: 24px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --offset: 50px;
+
+  // colors
+  --light-color: #fff;
+  --dark-color: #373334;
+  --accent-color: #9f0023;
+  --background-color: #f2f2f2;
+  --gray-color: #959595;
+  --brown-color: #373334;
+}

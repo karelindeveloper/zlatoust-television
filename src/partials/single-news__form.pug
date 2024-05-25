@@ -1,0 +1,16 @@
+.single-news__wrapper-form
+  .container.grid
+    .single-news__inner
+      section.single-news__form
+        form.form(action="#")
+          h2.form__title Оставьте свой комментарий
+          .form__top.flex
+            input.input-reset.form__input(type="text" placeholder='Имя')
+            input.input-reset.form__input(type="email" placeholder='E-mail')
+            input.input-reset.form__input.form__input-com.form__input-com-mobile(type="text" placeholder='Комментарий')
+            label.form__photo(for="IMG")
+              img.form__photo-image(src="img/svg/input-file.svg", alt="Скрепка")
+              span.form__photo-text Прикрепить фото
+              input.input-reset.is-hidden(type="file" id='IMG' placeholder='Прикрепить фото')
+          input.input-reset.form__input.form__input-com(type="text" placeholder='Комментарий')
+          button.btn-reset.btn.form__btn(type='submit') Отправить
